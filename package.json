@@ -1,0 +1,54 @@
+{
+  "name": "personal-site",
+  "description": "Deyvi Conde's personal website",
+  "scripts": {
+    "dev": "watch \"yarn build\" articles pages slides",
+    "build:dev": "node ../contentz/cli.js build",
+    "build": "contentz build",
+    "social:dev": "node ../contentz/cli.js social",
+    "social": "contentz social",
+    "write": "contentz write",
+    "start": "serve public -p 3000"
+  },
+  "keywords": [
+    "contentz",
+    "blog",
+    "personal-website",
+    "personal-site"
+  ],
+  "author": {
+    "name": "Deyvi Jefferson Conde Cahuana",
+    "email": "iamdeyvi@gmail.com",
+    "url": "https://dotconde.com/"
+  },
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "email": "iamdeyvi@gmail.com",
+    "url": "https://github.com/dotconde/personal-site/issues"
+  },
+  "homepage": "https://dotconde.com",
+  "dependencies": {
+    "@contentz/build": "2.5.1",
+    "@contentz/social": "3.14.2",
+    "@contentz/write": "3.13.2",
+    "contentz": "3.14.1"
+  },
+  "devDependencies": {
+    "emotion": "^10.0.27",
+    "husky": "3.1.0",
+    "lint-staged": "10.1.5",
+    "serve": "11.3.0",
+    "watch": "1.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.mdx": [
+      "yarn social"
+    ]
+  }
+}
