@@ -1,0 +1,14 @@
+---
+  title: Deyvi Conde
+  description: Software Engineer and Entrepreneur
+  language: en
+  repository: https://github.com/dotconde/personal-site
+  domain: https://dotconde.com
+  repository: https://github.com/dotconde/personal-site
+  email: iamdeyvi@gmail.com
+  social:
+    twitter: dotconde
+    github: dotconde
+    linkedin: deyviconde
+  incremental: false
+  icon: /static/favicon@128_d.png
