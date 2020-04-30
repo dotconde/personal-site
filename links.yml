@@ -1,10 +1,11 @@
 ---
-- url: https://opensource.guide/es/how-to-contribute/
-  title: 🇪🇸(Spanish) ¿Cómo contribuir al Open Source? 🤝
-  comment: Existen mil y un maneras de constribuir con un proyecto de código libre.
-  date: 2019-06-18T01:08:33.294Z
-
-- url: http://orta.io/vscode-themes/
-  title: Visual Studio Code Themes ❤️
-  comment: This is the complete list of themes for VS Code.
-  date: 2019-03-27T03:17:24.294Z
+- url: https://alligator.io/js/array-search-methods/
+  title: 4 methods to search through arrays in JavaScript
+- url: https://education.github.com/git-cheat-sheet-education.pdf
+  title: Git cheat sheet made by Github
+- url: https://fullstackopen.com/en/part1
+  title: Complete intro to ReactJS ⚛️
+- url: https://www.youtube.com/watch?v=j3XufmvEMiM
+  title: What are microservices ? (▶️Video)
+- url: https://en.wikipedia.org/wiki/Chaos_engineering
+  title: Chaos monkey by Netflix

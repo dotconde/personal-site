@@ -1,10 +1,89 @@
 ---
-title: React Hooks 101
-description: Complete explanation of the most useful React Hooks
-date: 2020-04-28T08:04:24.870Z
-lan: en
+title: React Hooks (Part 1) - useState ⚛️
+description: Master useState in less than 5 minutes
+date: 2020-04-30T08:02:08.870Z
 published: true
-tags: html
+lan: en
+tags: react, hooks, usestate
 ---
 
-# What are React Hooks?
+## What are React Hooks?
+
+React Hooks are functions that let you "hook into" React state and lifecycle features from function components.
+It reduces the complexity of state management.
+
+`Important:` Hooks don't work inside classes — they let you use React without classes.
+
+## What is useState ?
+
+useState is probably the most used hook in React. Basically, useState allow us to
+`store` and `manipulate` data. That's it.
+
+Let's try with a basic example.
+
+```js
+const [age, setAge] = useState(23);
+```
+
+- `age`: Stores an array of your friends (Yes, you can use an object too, but since this is a basic example, let's try with an array)
+- `setAge`: Function responsible for making modifications in `age`
+
+Let's play with some buttons and my age 👨‍💻
+
+#### Explanation:
+
+We created a React template and if we
+click `Younger` our age will decrease by one or increase if we click `Older`.
+Why isn't it working? It does not work because we have not defined how we will update our status. So, right now we will fix that.
+
+```js
+import React, { useState } from "react";
+
+export default function App() {
+  const [age, setAge] = useState(23);
+
+  return (
+    <div>
+      <p>{age}</p>
+      <button>Younger</button>
+      <button>Older</button>
+    </div>
+  );
+}
+```
+
+#### Explanation:
+
+It's fixed and now we are able to update our state.
+First button will handle its clicks with `handleYounger`.
+What `handleYounger` does? Update `age` value through `setAge`. The second button works similarly.
+
+```js
+import React, { useState } from "react";
+
+export default function App() {
+  const [age, setAge] = useState(23);
+
+  const handleYounger = () => {
+    setAge(age - 1);
+  };
+
+  const handleOlder = () => {
+    setAge(age + 1);
+  };
+
+  return (
+    <div>
+      <p>{age}</p>
+      <button onClick={handleYounger}> Younger </button>
+      <button onClick={handleOlder}> Older </button>
+    </div>
+  );
+}
+```
+
+## Recommendation
+
+You will have a great advantage if you learn how to work with useState and useEffect, you will spend 99% of your time dealing with these two concepts.
+Opps ... Did I mention useEffect? You will probably see an article explaining it.
+Follow me on Twitter: [@dotconde](https://twitter.com/dotconde)

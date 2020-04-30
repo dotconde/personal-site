@@ -3,20 +3,20 @@
     <title>Deyvi Conde - Articles</title>
     <link href="https://dotconde.com" rel="self"/>
     <link href="https://dotconde.com"/>
-    <updated>1588221889375</updated>
+    <updated>1588231746830</updated>
     <id>https://dotconde.com</id>
     <author>
       <name>Deyvi Conde</name>
       <email>iamdeyvi@gmail.com</email>
     </author>
       <entry>
-        <id>React Hooks 101</id>
-        <title>React Hooks 101</title>
+        <id>React Hooks (Part 1) - useState ⚛️</id>
+        <title>React Hooks (Part 1) - useState ⚛️</title>
         <link href="https://dotconde.com/articles/react-hooks/"/>
-        <updated>2020-04-28T08:04:24.870Z</updated>
+        <updated>2020-04-30T08:02:08.870Z</updated>
         <content type="xhtml">
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>Complete explanation of the most useful React Hooks</p>
+            <p>Master useState in less than 5 minutes</p>
             <a href="https://dotconde.com/articles/react-hooks/">Read Article</a>
           </div>
         </content>
