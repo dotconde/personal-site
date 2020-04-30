@@ -1,0 +1,77 @@
+{
+  "basics": {
+    "name": "Deyvi Conde",
+    "label": "Software Engineer",
+    "email": "iamdeyvi@gmail.com",
+    "website": "https://davidconde.tech",
+    "summary": "Software Engineer and entrepreneur",
+    "location": {
+      "city": "Lima",
+      "region": "Perú"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "davidcondetech",
+        "url": "https://github.com/davidcondetech"
+      },
+      {
+        "network": "Twitter",
+        "username": "davidcondetech",
+        "url": "https://twitter.com/davidcondetech"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Disoft",
+      "position": "Founder & CTO",
+      "summary": "We design digital products and improve people's quality of life",
+      "startDate": "2020-02-01"
+    },
+    {
+      "company": "Rankmi",
+      "position": "Full Stack Developer",
+      "summary": "Maintained frontend infrastructure with Angular/ReactJS and implemented new features for backend service using Ruby on Rails",
+      "website": "https://rankmi.com",
+      "startDate": "2019-08-16",
+      "endDate": "2020-01-05"
+    },
+    {
+      "company": "Codeable",
+      "position": "Student",
+      "summary": "A full time bootcamp where I get to become a Full Stack Developer by learning programming languages such as Ruby and Javascript, and by improving core skills like leadership, teamwork, assertive communication and doing effective presentations.",
+      "website": "https://codeable.pe",
+      "startDate": "2019-02-25",
+      "endDate": "2019-08-09"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Peruana de Ciencias Aplicadas",
+      "area": "Engineering School",
+      "studyType": "University",
+      "startDate": "2015-08-20",
+      "endDate": "2019-12-05"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend Development",
+      "keywords": ["React", "CSS in JS", "Saas", "Redux"]
+    },
+    {
+      "name": "Backend Development",
+      "keywords": ["Rails", "PostgreSQL", "Redis"]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": ["JavaScript", "Ruby", "C++", "Elixir"]
+    }
+  ],
+  "languages": [
+    { "language": "Spanish", "fluency": "Native speaker" },
+    { "language": "Portuguese", "fluency": "A1" },
+    { "language": "English", "fluency": "C1" }
+  ]
+}
