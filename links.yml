@@ -9,3 +9,7 @@
   title: What are microservices ? (▶️Video)
 - url: https://en.wikipedia.org/wiki/Chaos_engineering
   title: Chaos monkey by Netflix
+- url: https://www.debuggr.io/react-map-of-undefined/
+  title: React - Cannot read property 'map' of undefined
+- url: https://stackoverflow.com/questions/48699820/how-do-i-hide-api-key-in-create-react-app/index.html#answer-50457996
+  title: How do I hide API key in create-react-app?
