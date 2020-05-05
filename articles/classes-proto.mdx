@@ -1,0 +1,69 @@
+---
+title: Classes & Prototypes in Javascript
+description: Factory functions, prototype chain, this keyword and more.
+date: 2020-05-05T08:02:08.870Z
+published: false
+lan: en
+tags: react, hooks, usestate
+---
+
+## Classes & prototype in Javascript
+
+What to do when you have a huge project and you need an specific function ?
+You will try to hunt out that specific function and time is money.
+
+#### Factory function: Create an object and assign properties.
+
+```js
+const user1 = {
+  name: "David",
+  score: 3,
+  increment: function () {
+    user1.score++;
+  },
+};
+```
+
+```js
+const user2 = {
+  name: "Jefferson",
+  score: 6,
+  increment: function () {
+    user2.score++;
+  },
+};
+```
+
+In professional code enviroment we tend not to say key-value. I recommend you to call them `property name` and `property value`
+
+#### Factory function: Alternative way to to create and assign properties.
+
+```js
+const user3 = Object.create(null);
+user3.name = "Victoria";
+user3.score = 9;
+user3.increment = function () {
+  user3.score++;
+};
+```
+
+I could pass in an object in there full of objects full of properties, numbers or strings. I can pass almost anything.
+But until this point don't you think we are too repetitive ? 🤔 DRY (Don't repeat yourself)
+
+#### Solution 1: Generate objects using a function
+
+```js
+function userGenerator(name, score) {
+  const newUser = {};
+  newUser.name = name;
+  newUser.score = score;
+  newUser.increment = function () {
+    newUser.score++;
+  };
+  return newUser;
+}
+
+const user1 = userGenerator("David", 3);
+const user2 = userGenerator("Jefferson", 6);
+user1.increment();
+```
