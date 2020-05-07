@@ -50,7 +50,7 @@ user3.increment = function () {
 I could pass in an object in there full of objects full of properties, numbers or strings. I can pass almost anything.
 But until this point don't you think we are too repetitive ? 🤔 DRY (Don't repeat yourself)
 
-#### Solution 1: Generate objects using a function
+#### Solution: Generate objects using a function
 
 ```js
 function userGenerator(name, score) {
@@ -67,3 +67,39 @@ const user1 = userGenerator("David", 3);
 const user2 = userGenerator("Jefferson", 6);
 user1.increment();
 ```
+
+Now, let's imagine that we need to create 1M of users. In that case we might need to create
+1M of increment functions. Wait, what ? That will swallow up all my memory. Yes, exactly.
+To solve this new problem, there's a cool concept called prototype chaining. Let's see an example:
+
+```js
+function userFunctionStore = {
+  increment: function(){this.score++;},
+}
+```
+
+We just pick increment function an isolate it in a new userFunctionStore(). If you need to add a new functionality and share it
+with all users, you can add it into userFunctionStore() and userGenerator will chain it.
+
+```js
+
+function userGenerator(name, score) {
+  const newUser = Object.create(userFunctionStore)
+  newUser.name = name;
+  newUser.score = score;
+  return newUser;
+}
+
+function userFunctionStore = {
+  increment: function(){this.score++;}
+}
+
+const user1 = userGenerator("David", 3);
+const user2 = userGenerator("Jefferson", 6);
+user1.increment();
+```
+
+#### Hidden property
+
+There's a behind the scenes property called `__proto__`. If you access to user1 or user2 object
+you will notice that proto-value links to userFunctionStore. Cool, right?

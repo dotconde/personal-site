@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: https:/dotconde.com/articles/classes-proto/
+Disallow: https:/dotconde.com/slides/disoft-framework/
 Disallow: https:/dotconde.com/404.html
 Disallow: https:/dotconde.com/load-sw.js
 Sitemap: https:/dotconde.com/sitemap.xml
